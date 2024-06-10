@@ -1,0 +1,63 @@
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/themes/catppuccin-latte.toml"
+  # "~/.config/alacritty/themes/catppuccin-frappe.toml"
+  # "~/.config/alacritty/themes/catppuccin-macchiato.toml"
+   "~/.config/alacritty/themes/catppuccin-mocha.toml"
+]
+
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+#TERM = "alacritty"
+
+[window]
+decorations = "buttonless"
+opacity = 0.8
+dynamic_padding = true
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 12
+
+# Font configuration (changes require restart)
+[font.normal]
+  # Normal (roman) font face
+#  normal:
+  family = "JetBrains Mono Nerd Font"
+    # The `style` can be specified to pick a specific face.
+  style =  "Regular"
+
+  # Bold font face
+[font.bold]
+    family = "JetBrains Mono Nerd Font"
+    # The `style` can be specified to pick a specific face.
+    style =  "Bold"
+
+  # Italic font face
+[font.italic]
+    family = "JetBrains Mono Nerd Font"
+    # The `style` can be specified to pick a specific face.
+    style =  "Italic"
+
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+[font.offset]
+    x =  0
+    y =  0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+[font.glyph_offset]
+    x = 0
+    y =  0
+
+[shell]
+program = "/bin/fish"
+
